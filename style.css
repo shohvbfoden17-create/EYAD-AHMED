@@ -507,3 +507,17 @@ background:#f3f4f6;
 display:block;
 
 }
+
+@media (max-width: 450px){
+
+.menu-container{
+top:15px;
+right:15px;
+}
+
+.theme-container{
+top:15px;
+right:75px;
+}
+
+}
