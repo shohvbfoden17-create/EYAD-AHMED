@@ -1,18 +1,167 @@
-const btn = document.getElementById("themeBtn");
+const themeBtn = document.getElementById("themeBtn");
+const langBtn = document.getElementById("langBtn");
 
-btn.onclick = function(){
+/* الوضع الليلي */
+
+if(localStorage.getItem("theme") === "dark"){
+
+document.body.classList.add("dark-mode");
+
+if(themeBtn){
+themeBtn.innerHTML = "☀️";
+}
+
+}
+
+if(themeBtn){
+
+themeBtn.addEventListener("click", () => {
 
 document.body.classList.toggle("dark-mode");
 
-btn.classList.toggle("active");
-
 if(document.body.classList.contains("dark-mode")){
 
-btn.innerHTML = "☀️";
+localStorage.setItem("theme","dark");
+
+themeBtn.innerHTML = "☀️";
 
 }else{
 
-btn.innerHTML = "🌙";
+localStorage.setItem("theme","light");
+
+themeBtn.innerHTML = "🌙";
+
+}
+
+});
+
+}
+
+/* اللغة */
+
+let language = localStorage.getItem("language") || "ar";
+
+applyLanguage();
+
+if(langBtn){
+
+langBtn.addEventListener("click", () => {
+
+if(language === "ar"){
+
+language = "en";
+
+}else{
+
+language = "ar";
+
+}
+
+localStorage.setItem("language", language);
+
+applyLanguage();
+
+});
+
+}
+
+function applyLanguage(){
+
+if(language === "en"){
+
+if(langBtn) langBtn.innerHTML = "العربية";
+
+/* الصفحة الرئيسية */
+
+if(document.getElementById("title"))
+document.getElementById("title").innerHTML =
+"Welcome 👋";
+
+if(document.getElementById("name"))
+document.getElementById("name").innerHTML =
+"I am Eyad Ahmed";
+
+if(document.getElementById("desc"))
+document.getElementById("desc").innerHTML =
+"Click the button to view my CV";
+
+/* صفحة CV */
+
+if(document.getElementById("age"))
+document.getElementById("age").innerHTML =
+"🎂 Age: 15 Years";
+
+if(document.getElementById("grade"))
+document.getElementById("grade").innerHTML =
+"📚 Grade: First Secondary";
+
+if(document.getElementById("nation"))
+document.getElementById("nation").innerHTML =
+"🌍 Nationality: Egyptian";
+
+if(document.getElementById("city"))
+document.getElementById("city").innerHTML =
+"📍 City: Ismailia";
+
+if(document.getElementById("learn"))
+document.getElementById("learn").innerHTML =
+"💻 Learning Programming And Web Design";
+
+if(document.getElementById("interest"))
+document.getElementById("interest").innerHTML =
+"🎯 Interested In Technology, Mathematics, Science And Programming";
+
+if(document.getElementById("backBtn"))
+document.getElementById("backBtn").innerHTML =
+"Back To Home";
+
+}else{
+
+if(langBtn) langBtn.innerHTML = "English";
+
+/* الصفحة الرئيسية */
+
+if(document.getElementById("title"))
+document.getElementById("title").innerHTML =
+"مرحباً 👋";
+
+if(document.getElementById("name"))
+document.getElementById("name").innerHTML =
+"أنا إياد أحمد";
+
+if(document.getElementById("desc"))
+document.getElementById("desc").innerHTML =
+"اضغط على الزر علشان تشوف الـ CV بتاعي.";
+
+/* صفحة CV */
+
+if(document.getElementById("age"))
+document.getElementById("age").innerHTML =
+"🎂 العمر: 15 سنة";
+
+if(document.getElementById("grade"))
+document.getElementById("grade").innerHTML =
+"📚 الصف الدراسي: أولى ثانوي عام";
+
+if(document.getElementById("nation"))
+document.getElementById("nation").innerHTML =
+"🌍 الجنسية: مصري";
+
+if(document.getElementById("city"))
+document.getElementById("city").innerHTML =
+"📍 البلد: الإسماعيلية";
+
+if(document.getElementById("learn"))
+document.getElementById("learn").innerHTML =
+"💻 بتعلم برمجة وتصميم مواقع";
+
+if(document.getElementById("interest"))
+document.getElementById("interest").innerHTML =
+"🎯 مهتم بالتكنولوجيا والرياضيات والعلوم والبرمجة";
+
+if(document.getElementById("backBtn"))
+document.getElementById("backBtn").innerHTML =
+"الرجوع للرئيسية";
 
 }
 
