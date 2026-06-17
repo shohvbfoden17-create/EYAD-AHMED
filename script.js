@@ -166,3 +166,16 @@ document.getElementById("backBtn").innerHTML =
 }
 
 }
+
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+
+if(menuBtn){
+
+menuBtn.addEventListener("click", () => {
+
+menu.classList.toggle("show");
+
+});
+
+}
