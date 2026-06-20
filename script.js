@@ -115,6 +115,22 @@ if(document.getElementById("backBtn"))
 document.getElementById("backBtn").innerHTML =
 "Back To Home";
 
+if(document.getElementById("homeLink"))
+document.getElementById("homeLink").innerHTML =
+"Home";
+
+if(document.getElementById("aboutLink"))
+document.getElementById("aboutLink").innerHTML =
+"About";
+
+if(document.getElementById("footerHome"))
+document.getElementById("footerHome").innerHTML =
+"Home";
+
+if(document.getElementById("footerAbout"))
+document.getElementById("footerAbout").innerHTML =
+"About";
+
 }else{
 
 if(langBtn) langBtn.innerHTML = "English";
@@ -162,6 +178,22 @@ document.getElementById("interest").innerHTML =
 if(document.getElementById("backBtn"))
 document.getElementById("backBtn").innerHTML =
 "الرجوع للرئيسية";
+
+if(document.getElementById("homeLink"))
+document.getElementById("homeLink").innerHTML =
+"الرئيسية";
+
+if(document.getElementById("aboutLink"))
+document.getElementById("aboutLink").innerHTML =
+"عنّي";
+
+if(document.getElementById("footerHome"))
+document.getElementById("footerHome").innerHTML =
+"الرئيسية";
+
+if(document.getElementById("footerAbout"))
+document.getElementById("footerAbout").innerHTML =
+"عنّي";
 
 }
 
