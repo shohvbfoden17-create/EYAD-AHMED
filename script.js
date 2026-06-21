@@ -81,15 +81,15 @@ if(document.getElementById("name"))
 document.getElementById("name").innerHTML =
 "I am Eyad Ahmed";
 
-if(document.getElementById("desc"))
-document.getElementById("desc").innerHTML =
-"Click the button to view my CV";
+/* صفحة About */
 
-/* صفحة CV */
+if(document.getElementById("AboutName"))
+document.getElementById("AboutName").innerHTML =
+"Eyad Ahmed";
 
 if(document.getElementById("age"))
 document.getElementById("age").innerHTML =
-"🎂 Age: 15 Years";
+"Age: 15 Years";
 
 if(document.getElementById("grade"))
 document.getElementById("grade").innerHTML =
@@ -110,10 +110,6 @@ document.getElementById("learn").innerHTML =
 if(document.getElementById("interest"))
 document.getElementById("interest").innerHTML =
 "🎯 Interested In Technology, Mathematics, Science And Programming";
-
-if(document.getElementById("backBtn"))
-document.getElementById("backBtn").innerHTML =
-"Back To Home";
 
 if(document.getElementById("homeLink"))
 document.getElementById("homeLink").innerHTML =
@@ -145,15 +141,15 @@ if(document.getElementById("name"))
 document.getElementById("name").innerHTML =
 "أنا إياد أحمد";
 
-if(document.getElementById("desc"))
-document.getElementById("desc").innerHTML =
-"اضغط على الزر علشان تشوف الـ CV بتاعي.";
+/* صفحة About */
 
-/* صفحة CV */
+if(document.getElementById("AboutName"))
+document.getElementById("AboutName").innerHTML =
+"إياد أحمد";
 
 if(document.getElementById("age"))
 document.getElementById("age").innerHTML =
-"🎂 العمر: 15 سنة";
+"العمر: 15 سنة";
 
 if(document.getElementById("grade"))
 document.getElementById("grade").innerHTML =
@@ -175,9 +171,6 @@ if(document.getElementById("interest"))
 document.getElementById("interest").innerHTML =
 "🎯 مهتم بالتكنولوجيا والرياضيات والعلوم والبرمجة";
 
-if(document.getElementById("backBtn"))
-document.getElementById("backBtn").innerHTML =
-"الرجوع للرئيسية";
 
 if(document.getElementById("homeLink"))
 document.getElementById("homeLink").innerHTML =
