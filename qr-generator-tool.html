@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>QR Generator Tool</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" type="image/png" href="E-Logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="guide-body tool-page-body">
+
+<div class="menu-container">
+
+<button id="menuBtn" class="menu-btn">☰</button>
+
+<div id="menu" class="menu">
+
+<a href="index.html" id="homeLink">الرئيسية</a>
+
+<a href="About.html" id="aboutLink">About</a>
+
+<a href="Tools.html" id="toolsLink">Tools</a>
+
+</div>
+
+</div>
+
+<div class="top-buttons">
+
+<button id="themeBtn" class="theme-btn">🌙</button>
+
+<button id="langBtn" class="lang-btn">English</button>
+
+</div>
+
+<main class="tool-page">
+
+<a href="qr-generator-guide.html" class="back-link">
+
+<span id="backArrow">→</span>
+
+<span id="backText">الرجوع لشرح الأداة</span>
+
+</a>
+
+<h1 id="toolTitle">منشئ رمز QR</h1>
+
+<p id="toolDescription">أنشئ رمز QR لأي رابط أو نص أو بريد إلكتروني أو رقم هاتف بسهولة.</p>
+
+<div class="tool-box">
+
+<label id="inputLabel" for="qrInput">أدخل النص أو الرابط</label>
+
+<input type="text" id="qrInput" placeholder="https://example.com">
+
+<button id="generateBtn" class="btn">إنشاء رمز QR</button>
+
+<div id="qrResult"></div>
+
+<a id="downloadBtn" class="btn" download style="display:none;">تحميل الرمز</a>
+
+</div>
+
+<div class="tool-notes">
+
+<h2 id="notesTitle">ملاحظات</h2>
+
+<p id="notesText">تأكد من صحة البيانات قبل إنشاء الرمز، ثم جرّب مسحه بكاميرا الهاتف للتأكد من أنه يعمل بشكل صحيح.</p>
+
+</div>
+
+</main>
+
+ 
+<footer class="footer-nav">
+
+<a href="index.html" id="footerHome">الرئيسية</a>
+
+<span>|</span>
+
+<a href="About.html" id="footerAbout">About</a>
+
+<span>|</span>
+
+<a href="Tools.html" id="footerTools">Tools</a>
+
+</footer>
+   
+<script src="script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="qr-generator.js"></script>
+
+</body>
+
+</html>
